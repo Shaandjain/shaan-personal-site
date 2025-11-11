@@ -4,14 +4,14 @@ A production-ready personal portfolio website built with React, Vite, and Tailwi
 
 ## Features
 
-- 🎨 **Editorial Design**: Inspired by The New Yorker / The Atlantic with elegant typography
-- 🎴 **Business Card Hero**: Interactive 3D-tilt business card with letterpress emboss effect
-- 🖼️ **Painted Portrait**: SVG-filtered portrait with watercolor/ink bleed aesthetic
-- 🌓 **Theme Toggle**: Light/dark mode with system preference detection
-- 📱 **Fully Responsive**: Mobile-first design with smooth breakpoints
-- ♿ **Accessible**: WCAG AA compliant with keyboard navigation and focus states
-- 🔍 **SEO Optimized**: Meta tags, Open Graph, JSON-LD schema, sitemap
-- ⚡ **Performance**: Optimized build with Vite for fast loading
+-  **Editorial Design**: Inspired by The New Yorker / The Atlantic with elegant typography
+-  **Business Card**: Interactive 3D-tilt business card with letterpress emboss effect
+-  **Painted Portrait**: SVG-filtered portrait with watercolor/ink bleed aesthetic
+-  **Theme Toggle**: Light/dark mode with system preference detection
+-  **Fully Responsive**: Mobile-first design with smooth breakpoints
+-  **Accessible**: WCAG AA compliant with keyboard navigation and focus states
+-  **SEO Optimized**: Meta tags, Open Graph, JSON-LD schema, sitemap
+-  **Performance**: Optimized build with Vite for fast loading
 
 ## Tech Stack
 
