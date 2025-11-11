@@ -1,0 +1,112 @@
+{
+  "name": "Shaan Jain",
+  "location": "Toronto, Canada",
+  "email": "shaan.jain@mail.utoronto.ca",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/shaan-jain-4b957a22b/",
+    "github": "https://github.com/Shaandjain",
+    "blog": "https://shaanjain.substack.com",
+    "drc_article": "https://thedrcenter.org/when-one-company-owns-your-memory/",
+    "whatspoppin": "https://www.whatspoppin.info/",
+    "bias_blog": "https://shaanjain.substack.com/p/i-investigated-the-bias-in-ai-diffusion",
+    "ai_voice_blog": "https://shaanjain.substack.com/p/i-built-an-ai-of-myself-in-20-minutesad"
+  },
+  "tagline": "Product Lead • Software Engineer • Researcher",
+  "about": "Engineering student (AI/OR/HCI) and builder focused on products at the intersection of machine learning, policy, and user experience.",
+  "education": [
+    {
+      "school": "University of Toronto",
+      "degree": "B.A.Sc. Industrial Engineering (Machine Learning Minor)",
+      "location": "Toronto, Ontario",
+      "dates": "Sep 2023 – Present",
+      "highlights": [
+        "Focus: AI (NNs & optimization), Operations Research (LP), Human Factors, Info Engineering (Data Science, Prob/Stats, HCI).",
+        "Varsity Men's Rowing Team (top boat at OUA Championships)."
+      ]
+    },
+    {
+      "school": "Port Credit Secondary School",
+      "degree": "Regional Science & Technology Program",
+      "location": "Mississauga, Ontario",
+      "dates": "Sep 2019 – Jun 2023",
+      "highlights": [
+        "Class Valedictorian; Student-Athlete Excellence Award.",
+        "DECA Chapter President; AP Club Founder/President; MLH Hackathon participant.",
+        "Head of the Charles (Rowing), Varsity Basketball, OFSAA Alpine Skier."
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Research Associate",
+      "org": "Decentralization Research Center",
+      "location": "Toronto, Canada",
+      "dates": "Mar 2025 – Present",
+      "bullets": [
+        "Policy research at the intersection of governance and ML.",
+        "Produced frameworks for staffers to guide AI policy direction."
+      ]
+    },
+    {
+      "role": "Co-Founder & Product Lead",
+      "org": "Whats Poppin",
+      "location": "Toronto, Canada",
+      "dates": "Apr 2025 – Present",
+      "bullets": [
+        "Led product requirements, feature specs, and telemetry with engineering.",
+        "Aligned recommendation algorithm with platform objectives.",
+        "Drove BD and partnerships to grow acquisition and retention."
+      ]
+    },
+    {
+      "role": "Software Engineer",
+      "org": "Continuum Health Venture (CHV) Capital",
+      "location": "Toronto, Canada",
+      "dates": "May 2024 – Sep 2024",
+      "bullets": [
+        "Full-stack: React front-end + Python Flask back-end.",
+        "Integrated GPT-4/Claude into deal-management workflow; ~25% efficiency gain."
+      ]
+    },
+    {
+      "role": "Undergraduate AI HCI Researcher",
+      "org": "Dynamic Graphics Project HCI Lab, UofT",
+      "location": "Toronto, Canada",
+      "dates": "May 2024 – Sep 2024",
+      "bullets": [
+        "Prototyped/evaluated user-friendly, AI-driven interfaces.",
+        "Studied trust/confidence in human–AI communication.",
+        "Awarded $10,000 Mitacs grant (Prof. Daniel Wigdor)."
+      ]
+    },
+    {
+      "role": "Personal Project",
+      "org": "Social Harms from Foundation Models",
+      "location": "Toronto, Canada",
+      "dates": "Aug 2023",
+      "bullets": [
+        "Audited MidJourney V5 for gender/race stereotyping.",
+        "Built mimetic AI voice demo (ElevenLabs) to show impersonation risk."
+      ]
+    }
+  ],
+  "awards": [
+    "Mitacs Research Grant (2024, $10,000, DGP HCI Lab, UofT)",
+    "Class Valedictorian (2023, Port Credit SS)",
+    "Duke of Edinburgh Silver Award (2020–2023)",
+    "SHAD Canada Summer Program (2022, UPEI)"
+  ],
+  "skills": {
+    "programming": ["Python", "Java", "MATLAB", "BPMN", "C", "AMPL", "Gurobi"],
+    "ml": ["Open-source LLM tooling", "LLM product integration"],
+    "robotics": ["SOLIDWORKS", "Mechanical parts", "Electrical systems"],
+    "media": ["DaVinci Resolve", "Lightroom"]
+  },
+  "projects": [
+    {"title": "What's Poppin", "url": "https://www.whatspoppin.info/", "tags": ["Product", "Reco Systems", "Startups"]},
+    {"title": "When One Company Owns Your Memory", "url": "https://thedrcenter.org/when-one-company-owns-your-memory/", "tags": ["Policy", "AI"]},
+    {"title": "Bias in AI Diffusion Models", "url": "https://shaanjain.substack.com/p/i-investigated-the-bias-in-ai-diffusion", "tags": ["Research", "AI Ethics"]},
+    {"title": "I Built an AI of Myself", "url": "https://shaanjain.substack.com/p/i-built-an-ai-of-myself-in-20-minutesad", "tags": ["Voice", "LLMs"]}
+  ]
+}
+
