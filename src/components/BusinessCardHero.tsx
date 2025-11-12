@@ -98,33 +98,38 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
             </p>
 
             {/* Social Links */}
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-3 mb-6">
+              {/* LinkedIn */}
               <a
                 href={resumeData.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-ink/60 dark:text-ivory/60 hover:text-accent dark:hover:text-accent transition-colors"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#0077b5] dark:hover:bg-[#0077b5] text-ink/60 dark:text-ivory/60 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={20} />
+                <Linkedin size={20} className="transition-transform duration-300 group-hover:scale-110" />
               </a>
+              
+              {/* GitHub */}
               <a
                 href={resumeData.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-ink/60 dark:text-ivory/60 hover:text-accent dark:hover:text-accent transition-colors"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#181717] dark:hover:bg-[#ffffff] text-ink/60 dark:text-ivory/60 hover:text-white dark:hover:text-[#181717] transition-all duration-300 hover:scale-110 hover:shadow-lg"
                 aria-label="GitHub"
               >
-                <Github size={20} />
+                <Github size={20} className="transition-transform duration-300 group-hover:scale-110" />
               </a>
+              
+              {/* Substack */}
               <a
                 href={resumeData.links.blog}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-ink/60 dark:text-ivory/60 hover:text-accent dark:hover:text-accent transition-colors"
-                aria-label="Blog"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#FF6719] dark:hover:bg-[#FF6719] text-ink/60 dark:text-ivory/60 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                aria-label="Substack Blog"
               >
-                <ExternalLink size={20} />
+                <ExternalLink size={20} className="transition-transform duration-300 group-hover:scale-110" />
               </a>
             </div>
           </div>
