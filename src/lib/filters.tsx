@@ -57,24 +57,22 @@ export const SvgDefs: React.FC = () => {
           </feMerge>
         </filter>
 
-        {/* Combined painted effect */}
+        {/* Subtle painted effect - minimal blur for clarity */}
         <filter id="paintedPortrait" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur in="SourceGraphic" stdDeviation="0.5" result="blur" />
+          {/* Very subtle texture only - no blur */}
           <feTurbulence
-            baseFrequency="0.8"
-            numOctaves="3"
+            baseFrequency="0.02"
+            numOctaves="2"
             result="turbulence"
             seed="3"
           />
           <feDisplacementMap
-            in="blur"
+            in="SourceGraphic"
             in2="turbulence"
-            scale="2"
+            scale="0.5"
             xChannelSelector="R"
             yChannelSelector="G"
-            result="displaced"
           />
-          <feGaussianBlur in="displaced" stdDeviation="1" />
         </filter>
       </defs>
     </svg>

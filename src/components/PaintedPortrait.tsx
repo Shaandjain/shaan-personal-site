@@ -61,7 +61,7 @@ export const PaintedPortrait: React.FC<PaintedPortraitProps> = ({ src, alt, clas
         animate={isVisible ? { opacity: 1, scale: 1 } : {}}
         transition={{ duration: 1.2, ease: 'easeOut' }}
       >
-        {/* Portrait image with theme-aware filters */}
+        {/* Portrait image with theme-aware filters - sharp rendering */}
         <img
           ref={imgRef}
           src={src}
@@ -70,8 +70,11 @@ export const PaintedPortrait: React.FC<PaintedPortraitProps> = ({ src, alt, clas
           style={{
             filter: 'url(#paintedPortrait)',
             transition: 'opacity 1.2s ease-out, filter 0.3s ease',
+            imageRendering: 'crisp-edges',
+            WebkitImageRendering: 'crisp-edges',
           }}
           onError={handleImageError}
+          loading="eager"
         />
 
         {/* Theme-aware overlay for better integration */}
@@ -93,9 +96,9 @@ export const PaintedPortrait: React.FC<PaintedPortraitProps> = ({ src, alt, clas
           }}
         />
 
-        {/* Soft grain overlay - theme aware */}
+        {/* Very subtle grain overlay - theme aware */}
         <div
-          className="absolute inset-0 pointer-events-none opacity-20 dark:opacity-10"
+          className="absolute inset-0 pointer-events-none opacity-5 dark:opacity-3"
           style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")`,
             mixBlendMode: 'overlay',

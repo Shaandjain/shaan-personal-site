@@ -75,16 +75,22 @@
     @apply bg-accent/20 text-ink dark:text-ivory;
   }
   
-  /* Portrait image styling for theme adaptation */
+  /* Portrait image styling for theme adaptation - sharp and clear */
   .portrait-image {
     /* Remove white backgrounds and blend with site colors */
     mix-blend-mode: multiply;
-    filter: url(#paintedPortrait) contrast(1.05) brightness(0.98);
+    /* Minimal filter - just subtle texture, no blur */
+    filter: url(#paintedPortrait) contrast(1.02) brightness(0.99);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
   
   .dark .portrait-image {
     mix-blend-mode: screen;
-    filter: url(#paintedPortrait) contrast(0.95) brightness(1.02);
+    /* Minimal filter - just subtle texture, no blur */
+    filter: url(#paintedPortrait) contrast(0.98) brightness(1.01);
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
   
   /* Portrait overlay adjustments */
