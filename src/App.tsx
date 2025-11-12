@@ -147,11 +147,13 @@ function App() {
             </div>
             <div className="prose dark:prose-invert max-w-none">
               <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed">
-                My research focuses on understanding and mitigating social harms from
-                foundation models, with particular attention to bias in generative AI systems
-                and the policy implications of AI governance. I've worked on projects
-                examining gender and racial stereotyping in diffusion models, and developed
-                frameworks for evaluating trust and confidence in human–AI communication.
+                My research focuses on the policy implications of AI governance, with particular
+                attention to data portability, interoperability, and preventing the monopolization
+                of digital memory. I examine how AI assistants that remember users across months
+                and years create switching costs and lock-in effects, and I develop frameworks for
+                user-owned, portable memory layers that enable competition and choice. This work
+                addresses the intersection of AI personalization, competition policy, and user
+                agency—ensuring that the people who create their memories get to keep them.
               </p>
             </div>
           </div>
