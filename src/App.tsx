@@ -58,7 +58,7 @@ function App() {
   return (
     <div className="min-h-screen">
       <SvgDefs />
-      
+
       {/* Header with theme toggle */}
       <header className="fixed top-0 right-0 z-50 p-4 md:p-6">
         <ThemeToggle />
@@ -76,10 +76,7 @@ function App() {
         <Section id="about" title="About" kicker="Introduction">
           <div className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
             <div className="flex-shrink-0 mx-auto md:mx-0">
-              <PaintedPortrait
-                src="/portrait.png"
-                alt={`Portrait of ${resumeData.name}`}
-              />
+              <PaintedPortrait src="/portrait.png" alt={`Portrait of ${resumeData.name}`} />
             </div>
             <div className="flex-1">
               <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed mb-6">
@@ -124,12 +121,7 @@ function App() {
         <Section id="projects" title="Projects & Writing" kicker="Selected Work">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {resumeData.projects.map((project, idx) => (
-              <ProjectCard
-                key={idx}
-                title={project.title}
-                url={project.url}
-                tags={project.tags}
-              />
+              <ProjectCard key={idx} title={project.title} url={project.url} tags={project.tags} />
             ))}
           </div>
         </Section>
@@ -146,14 +138,28 @@ function App() {
               </p>
             </div>
             <div className="prose dark:prose-invert max-w-none">
+              <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed mb-4">
+                In my latest release with the Decentralization Research Center,{' '}
+                <a
+                  href={resumeData.links.drc_article}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-accent hover:text-accent/80 underline"
+                >
+                  "When One Company Owns Your Memory"
+                </a>
+                , I argue for a neutral, user-owned memory layer, so your context follows you, not
+                the platform.
+              </p>
+              <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed mb-4">
+                The risk isn't that assistants remember—these are actually quite useful components
+                of AI. It's that one company becomes the keeper of who you are.
+              </p>
               <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed">
-                My research focuses on the policy implications of AI governance, with particular
-                attention to data portability, interoperability, and preventing the monopolization
-                of digital memory. I examine how AI assistants that remember users across months
-                and years create switching costs and lock-in effects, and I develop frameworks for
-                user-owned, portable memory layers that enable competition and choice. This work
-                addresses the intersection of AI personalization, competition policy, and user
-                agency—ensuring that the people who create their memories get to keep them.
+                AI shouldn't win by keeping your memory. It should win by earning it daily. That's
+                the heart of this paper: a design for safe, portable memory and a bridge from Human
+                Context Protocol-style standards to products like Mem0 that users can see and
+                control.
               </p>
             </div>
           </div>
@@ -167,11 +173,7 @@ function App() {
                 key={idx}
                 className="flex items-start gap-4 text-fluid-base text-ink/80 dark:text-ivory/80 font-sans"
               >
-                <Award
-                  size={20}
-                  className="text-accent flex-shrink-0 mt-1"
-                  aria-hidden="true"
-                />
+                <Award size={20} className="text-accent flex-shrink-0 mt-1" aria-hidden="true" />
                 <span>{award}</span>
               </li>
             ))}
@@ -200,8 +202,8 @@ function App() {
         <Section id="contact" title="Contact" kicker="Get in Touch">
           <div className="text-center space-y-6">
             <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed max-w-2xl mx-auto">
-              Interested in collaborating or discussing AI, product design, or research?
-              I'd love to hear from you.
+              Interested in collaborating or discussing AI, product design, or research? I'd love to
+              hear from you.
             </p>
             <a
               href={`mailto:${resumeData.email}?subject=Hello from your portfolio`}
@@ -273,4 +275,3 @@ function App() {
 }
 
 export default App
-
