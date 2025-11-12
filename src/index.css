@@ -53,6 +53,17 @@
     mix-blend-mode: overlay;
   }
   
+  /* Wave texture animation for subtle movement */
+
+  @keyframes waveTexture {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 400px 0;
+    }
+  }
+
   /* Respect reduced motion */
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -62,6 +73,12 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
+    }
+    
+    .wave-layer-1,
+    .wave-layer-2,
+    .wave-layer-3 {
+      animation: none !important;
     }
   }
   

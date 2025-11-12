@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
 import { Linkedin, Github, ExternalLink, ChevronDown } from 'lucide-react'
+import { AnimatedWaves } from './AnimatedWaves'
 import resumeData from '../content/resume.json'
 
 interface BusinessCardHeroProps {
@@ -38,13 +39,16 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
-      {/* Ocean waves background image */}
+      {/* Ocean waves background image - static base */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url(/og-image.jpg)',
         }}
       />
+      
+      {/* Animated waves overlay */}
+      <AnimatedWaves />
       
       {/* Gradient fade from ocean to dark background - smooth blend */}
       <div 
