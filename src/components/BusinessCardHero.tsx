@@ -40,26 +40,27 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
     <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Ocean waves background image */}
       <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-90 dark:opacity-100"
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: 'url(/og-image.jpg)',
         }}
       />
       
       {/* Gradient fade from ocean to dark background - smooth blend */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent via-ink/30 to-ink dark:via-ink/50 dark:to-ink" 
-           style={{
-             background: 'linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(14, 14, 16, 0.3) 50%, rgba(14, 14, 16, 0.7) 75%, rgb(14, 14, 16) 100%)'
-           }} />
+      <div 
+        className="absolute inset-0"
+        style={{
+          background: 'linear-gradient(to bottom, transparent 0%, transparent 25%, rgba(14, 14, 16, 0.4) 60%, rgba(14, 14, 16, 0.85) 85%, rgb(14, 14, 16) 100%)'
+        }}
+      />
       
-      {/* Dark mode gradient - stronger fade */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink/40 to-ink dark:block hidden" 
-           style={{
-             background: 'linear-gradient(to bottom, transparent 0%, transparent 15%, rgba(14, 14, 16, 0.4) 40%, rgba(14, 14, 16, 0.8) 70%, rgb(14, 14, 16) 100%)'
-           }} />
-      
-      {/* Subtle overlay for text readability */}
-      <div className="absolute inset-0 bg-ink/10 dark:bg-ink/20" />
+      {/* Dark mode - stronger fade for better contrast */}
+      <div 
+        className="absolute inset-0 dark:block hidden"
+        style={{
+          background: 'linear-gradient(to bottom, transparent 0%, transparent 20%, rgba(14, 14, 16, 0.5) 55%, rgba(14, 14, 16, 0.9) 80%, rgb(14, 14, 16) 100%)'
+        }}
+      />
 
       <motion.div
         ref={cardRef}
