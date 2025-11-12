@@ -126,7 +126,13 @@ function App() {
         <Section id="projects" title="Projects & Writing" kicker="Selected Work">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {resumeData.projects.map((project, idx) => (
-              <ProjectCard key={idx} title={project.title} url={project.url} tags={project.tags} />
+              <ProjectCard 
+                key={idx} 
+                title={project.title} 
+                url={project.url} 
+                tags={project.tags}
+                description={project.description}
+              />
             ))}
           </div>
         </Section>

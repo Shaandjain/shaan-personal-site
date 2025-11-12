@@ -5,9 +5,10 @@ interface ProjectCardProps {
   title: string
   url: string
   tags: string[]
+  description?: string
 }
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({ title, url, tags }) => {
+export const ProjectCard: React.FC<ProjectCardProps> = ({ title, url, tags, description }) => {
   return (
     <a
       href={url}
@@ -24,6 +25,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ title, url, tags }) =>
           className="text-ink/40 dark:text-ivory/40 group-hover:text-accent transition-colors flex-shrink-0 ml-2"
         />
       </div>
+      {description && (
+        <p className="text-fluid-sm text-ink/70 dark:text-ivory/70 font-sans leading-relaxed mb-4 line-clamp-4">
+          {description}
+        </p>
+      )}
       <div className="flex flex-wrap gap-2">
         {tags.map((tag) => (
           <Tag key={tag} label={tag} />
