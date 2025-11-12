@@ -174,9 +174,10 @@ function App() {
         <Section id="gallery" title="Photography" kicker="Gallery">
           <div className="space-y-8">
             <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed max-w-2xl mx-auto text-center mb-8">
-              Explore my photography work, including rowing practice sessions, travel, and landscape captures.
+              Explore my photography work, including rowing practice sessions, travel, and landscape
+              captures.
             </p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               {/* Rowing Gallery */}
               <div className="text-center space-y-4 p-6 border border-ink/10 dark:border-ivory/10 rounded-lg hover:border-accent dark:hover:border-accent transition-colors">
@@ -194,7 +195,9 @@ function App() {
                   aria-label="Open rowing practice gallery in new tab"
                 >
                   View Gallery
-                  <span className="text-fluid-xs" aria-hidden="true">↗</span>
+                  <span className="text-fluid-xs" aria-hidden="true">
+                    ↗
+                  </span>
                 </a>
               </div>
 
@@ -214,7 +217,9 @@ function App() {
                   aria-label="Open Bay Area & Yosemite gallery in new tab"
                 >
                   View Gallery
-                  <span className="text-fluid-xs" aria-hidden="true">↗</span>
+                  <span className="text-fluid-xs" aria-hidden="true">
+                    ↗
+                  </span>
                 </a>
               </div>
             </div>
