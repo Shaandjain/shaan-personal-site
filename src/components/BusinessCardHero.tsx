@@ -135,7 +135,17 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
                 style={{ pointerEvents: 'auto', zIndex: 10 }}
                 onClick={(e) => e.stopPropagation()}
               >
-                <ExternalLink size={20} className="transition-transform duration-300 group-hover:scale-110 pointer-events-none" />
+                <svg 
+                  width="20" 
+                  height="20" 
+                  viewBox="0 0 24 24" 
+                  fill="currentColor" 
+                  className="transition-transform duration-300 group-hover:scale-110 pointer-events-none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" strokeWidth="1.5"/>
+                  <path d="M9 8.5c0-0.5 0.5-1 1-1h4c0.5 0 1 0.5 1 1v1c0 0.5-0.5 1-1 1h-4c-0.5 0-1-0.5-1-1v-1zm0 3c0-0.5 0.5-1 1-1h4c0.5 0 1 0.5 1 1v1c0 0.5-0.5 1-1 1h-4c-0.5 0-1-0.5-1-1v-1zm0 3c0-0.5 0.5-1 1-1h4c0.5 0 1 0.5 1 1v1c0 0.5-0.5 1-1 1h-4c-0.5 0-1-0.5-1-1v-1z" fill="currentColor"/>
+                </svg>
               </a>
             </div>
           </div>
