@@ -70,8 +70,7 @@ export const PaintedPortrait: React.FC<PaintedPortraitProps> = ({ src, alt, clas
           style={{
             filter: 'url(#paintedPortrait)',
             transition: 'opacity 1.2s ease-out, filter 0.3s ease',
-            imageRendering: 'crisp-edges',
-            WebkitImageRendering: 'crisp-edges',
+            imageRendering: 'crisp-edges' as const,
           }}
           onError={handleImageError}
           loading="eager"
