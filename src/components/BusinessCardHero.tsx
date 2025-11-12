@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Linkedin, Github, ExternalLink, ChevronDown } from 'lucide-react'
+import { Linkedin, Github, ChevronDown } from 'lucide-react'
 import resumeData from '../content/resume.json'
 
 interface BusinessCardHeroProps {
