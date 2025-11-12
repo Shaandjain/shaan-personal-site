@@ -53,16 +53,6 @@
     mix-blend-mode: overlay;
   }
   
-  /* Wave texture animation for subtle movement */
-
-  @keyframes waveTexture {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 400px 0;
-    }
-  }
 
   /* Respect reduced motion */
   @media (prefers-reduced-motion: reduce) {
