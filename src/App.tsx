@@ -172,25 +172,52 @@ function App() {
 
         {/* Photo Gallery Section */}
         <Section id="gallery" title="Photography" kicker="Gallery">
-          <div className="text-center space-y-6">
-            <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
-              Explore my photography work, including rowing practice sessions and other captures.
+          <div className="space-y-8">
+            <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed max-w-2xl mx-auto text-center mb-8">
+              Explore my photography work, including rowing practice sessions, travel, and landscape captures.
             </p>
-            <a
-              href="/gallery.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-ink dark:bg-ivory text-ivory dark:text-ink font-sans text-fluid-base rounded-lg hover:bg-ink/90 dark:hover:bg-ivory/90 transition-colors"
-              aria-label="Open photo gallery in new tab"
-            >
-              View Photo Gallery
-              <span className="text-fluid-xs" aria-hidden="true">
-                ↗
-              </span>
-            </a>
-            <p className="text-fluid-sm text-ink/50 dark:text-ivory/50 font-sans mt-4">
-              April 2025 — Rowing Practice Photo Gallery
-            </p>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              {/* Rowing Gallery */}
+              <div className="text-center space-y-4 p-6 border border-ink/10 dark:border-ivory/10 rounded-lg hover:border-accent dark:hover:border-accent transition-colors">
+                <h3 className="font-serif text-fluid-xl font-semibold text-ink dark:text-ivory mb-2">
+                  Rowing Practice
+                </h3>
+                <p className="text-fluid-sm text-ink/60 dark:text-ivory/60 font-sans mb-4">
+                  April 2025 — Rowing Practice Photo Gallery
+                </p>
+                <a
+                  href="/gallery.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-ink dark:bg-ivory text-ivory dark:text-ink font-sans text-fluid-sm rounded-lg hover:bg-ink/90 dark:hover:bg-ivory/90 transition-colors"
+                  aria-label="Open rowing practice gallery in new tab"
+                >
+                  View Gallery
+                  <span className="text-fluid-xs" aria-hidden="true">↗</span>
+                </a>
+              </div>
+
+              {/* Bay Area & Yosemite Gallery */}
+              <div className="text-center space-y-4 p-6 border border-ink/10 dark:border-ivory/10 rounded-lg hover:border-accent dark:hover:border-accent transition-colors">
+                <h3 className="font-serif text-fluid-xl font-semibold text-ink dark:text-ivory mb-2">
+                  Bay Area & Yosemite
+                </h3>
+                <p className="text-fluid-sm text-ink/60 dark:text-ivory/60 font-sans mb-4">
+                  2025 Summer — Bay Area & Yosemite National Park
+                </p>
+                <a
+                  href="/yosemite-gallery.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-ink dark:bg-ivory text-ivory dark:text-ink font-sans text-fluid-sm rounded-lg hover:bg-ink/90 dark:hover:bg-ivory/90 transition-colors"
+                  aria-label="Open Bay Area & Yosemite gallery in new tab"
+                >
+                  View Gallery
+                  <span className="text-fluid-xs" aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
           </div>
         </Section>
 

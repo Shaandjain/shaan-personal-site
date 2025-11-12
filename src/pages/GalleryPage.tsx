@@ -2,9 +2,21 @@ import { PhotoGallery } from '../components/PhotoGallery'
 import { ThemeToggle } from '../components/ThemeToggle'
 import { SvgDefs } from '../lib/filters'
 
-export const GalleryPage = () => {
-  // Generate rowing images array
-  const rowingImages = Array.from({ length: 58 }, (_, i) => `/rowimg${i + 1}.png`)
+interface GalleryPageProps {
+  images?: string[]
+  title?: string
+}
+
+export const GalleryPage: React.FC<GalleryPageProps> = ({ 
+  images: providedImages,
+  title: providedTitle 
+}) => {
+  // Default to rowing images if not provided
+  const images = providedImages || Array.from({ length: 58 }, (_, i) => `/rowimg${i + 1}.png`)
+  const title = providedTitle || 'April 2025 — Rowing Practice Photo Gallery'
+  const subtitle = providedTitle 
+    ? 'A collection of photographs from Bay Area and Yosemite National Park.'
+    : 'A collection of photographs from rowing practice sessions.'
 
   return (
     <div className="min-h-screen bg-ivory dark:bg-ink">
@@ -33,14 +45,14 @@ export const GalleryPage = () => {
               Photography
             </p>
             <h1 className="font-serif text-fluid-4xl font-semibold text-ink dark:text-ivory mb-4 letterpress">
-              April 2025 — Rowing Practice Photo Gallery
+              {title}
             </h1>
             <p className="text-fluid-base text-ink/70 dark:text-ivory/70 font-sans">
-              A collection of photographs from rowing practice sessions.
+              {subtitle}
             </p>
           </div>
 
-          <PhotoGallery images={rowingImages} title="April 2025 Rowing Practice" />
+          <PhotoGallery images={images} title={title} />
         </div>
       </main>
     </div>
