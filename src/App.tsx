@@ -84,7 +84,8 @@ function App() {
                 {resumeData.about}
               </p>
               <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed mb-6">
-                I'm also a member of the Varsity Men's Rowing Team at the University of Toronto, competing at the top boat level in OUA Championships.
+                I'm a student athlete on the Varsity Men's Rowing Team at the University of Toronto,
+                competing in the OUA Championships.
               </p>
               <div className="space-y-4">
                 {resumeData.education.map((edu, idx) => (
