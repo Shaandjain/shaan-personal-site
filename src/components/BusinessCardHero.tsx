@@ -74,7 +74,7 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
         transition={{ type: 'spring', stiffness: 300, damping: 30 }}
       >
         {/* Business Card */}
-        <div className="bg-ivory dark:bg-[#1a1a1c] border border-ink/10 dark:border-ivory/20 rounded-lg p-8 md:p-12 shadow-letterpress paper-grain relative overflow-hidden">
+        <div className="bg-ivory dark:bg-[#1a1a1c] border border-ink/10 dark:border-ivory/20 rounded-lg p-8 md:p-12 shadow-letterpress paper-grain relative overflow-hidden" style={{ transform: 'translateZ(0)' }}>
           {/* Gleam effect on hover */}
           <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-500 pointer-events-none">
             <div className="absolute inset-0 bg-gradient-to-br from-white/20 via-transparent to-transparent" />
@@ -98,16 +98,18 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
             </p>
 
             {/* Social Links */}
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-6" style={{ transform: 'translateZ(20px)', pointerEvents: 'auto' }}>
               {/* LinkedIn */}
               <a
                 href={resumeData.links.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#0077b5] dark:hover:bg-[#0077b5] text-ink/60 dark:text-ivory/60 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#0077b5] dark:hover:bg-[#0077b5] text-ink/60 dark:text-ivory/60 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg cursor-pointer"
                 aria-label="LinkedIn"
+                style={{ pointerEvents: 'auto', zIndex: 10 }}
+                onClick={(e) => e.stopPropagation()}
               >
-                <Linkedin size={20} className="transition-transform duration-300 group-hover:scale-110" />
+                <Linkedin size={20} className="transition-transform duration-300 group-hover:scale-110 pointer-events-none" />
               </a>
               
               {/* GitHub */}
@@ -115,10 +117,12 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
                 href={resumeData.links.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#181717] dark:hover:bg-[#ffffff] text-ink/60 dark:text-ivory/60 hover:text-white dark:hover:text-[#181717] transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#181717] dark:hover:bg-[#ffffff] text-ink/60 dark:text-ivory/60 hover:text-white dark:hover:text-[#181717] transition-all duration-300 hover:scale-110 hover:shadow-lg cursor-pointer"
                 aria-label="GitHub"
+                style={{ pointerEvents: 'auto', zIndex: 10 }}
+                onClick={(e) => e.stopPropagation()}
               >
-                <Github size={20} className="transition-transform duration-300 group-hover:scale-110" />
+                <Github size={20} className="transition-transform duration-300 group-hover:scale-110 pointer-events-none" />
               </a>
               
               {/* Substack */}
@@ -126,10 +130,12 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
                 href={resumeData.links.blog}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#FF6719] dark:hover:bg-[#FF6719] text-ink/60 dark:text-ivory/60 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg"
+                className="group relative flex items-center justify-center w-10 h-10 rounded-lg bg-ink/5 dark:bg-ivory/5 hover:bg-[#FF6719] dark:hover:bg-[#FF6719] text-ink/60 dark:text-ivory/60 hover:text-white transition-all duration-300 hover:scale-110 hover:shadow-lg cursor-pointer"
                 aria-label="Substack Blog"
+                style={{ pointerEvents: 'auto', zIndex: 10 }}
+                onClick={(e) => e.stopPropagation()}
               >
-                <ExternalLink size={20} className="transition-transform duration-300 group-hover:scale-110" />
+                <ExternalLink size={20} className="transition-transform duration-300 group-hover:scale-110 pointer-events-none" />
               </a>
             </div>
           </div>
