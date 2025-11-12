@@ -37,10 +37,24 @@ export const BusinessCardHero: React.FC<BusinessCardHeroProps> = ({ onScrollDown
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 relative">
+    <section className="min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden">
+      {/* Ocean waves background image */}
+      <div 
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: 'url(/og-image.jpg)',
+        }}
+      />
+      
+      {/* Gradient fade from ocean to dark background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-ink/40 to-ink dark:via-ink/60 dark:to-ink" />
+      
+      {/* Additional overlay for better text readability */}
+      <div className="absolute inset-0 bg-ink/20 dark:bg-ink/40" />
+
       <motion.div
         ref={cardRef}
-        className="relative w-full max-w-md"
+        className="relative z-10 w-full max-w-md"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         style={{
