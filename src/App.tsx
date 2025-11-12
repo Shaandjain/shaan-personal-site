@@ -7,7 +7,6 @@ import { ProjectCard } from './components/ProjectCard'
 import { Pill } from './components/Pill'
 import { TOC } from './components/TOC'
 import { ThemeToggle } from './components/ThemeToggle'
-import { PhotoGallery } from './components/PhotoGallery'
 import { SvgDefs } from './lib/filters'
 import { generateJSONLD } from './lib/seo'
 import resumeData from './content/resume.json'
@@ -45,9 +44,6 @@ function App() {
       document.head.removeChild(scriptWebsite)
     }
   }, [])
-
-  // Generate rowing images array
-  const rowingImages = Array.from({ length: 58 }, (_, i) => `/rowimg${i + 1}.png`)
 
   const tocItems = [
     { id: 'about', label: 'About' },
@@ -171,8 +167,25 @@ function App() {
         </Section>
 
         {/* Photo Gallery Section */}
-        <Section id="gallery" title="April 2025 — Rowing Practice Photo Gallery" kicker="Photography">
-          <PhotoGallery images={rowingImages} title="April 2025 Rowing Practice" />
+        <Section id="gallery" title="Photography" kicker="Gallery">
+          <div className="text-center space-y-6">
+            <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed max-w-2xl mx-auto mb-8">
+              Explore my photography work, including rowing practice sessions and other captures.
+            </p>
+            <a
+              href="/gallery.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-ink dark:bg-ivory text-ivory dark:text-ink font-sans text-fluid-base rounded-lg hover:bg-ink/90 dark:hover:bg-ivory/90 transition-colors"
+              aria-label="Open photo gallery in new tab"
+            >
+              View Photo Gallery
+              <span className="text-fluid-xs" aria-hidden="true">↗</span>
+            </a>
+            <p className="text-fluid-sm text-ink/50 dark:text-ivory/50 font-sans mt-4">
+              April 2025 — Rowing Practice Photo Gallery
+            </p>
+          </div>
         </Section>
 
         {/* Awards Section */}
