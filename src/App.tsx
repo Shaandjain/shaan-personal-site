@@ -83,6 +83,9 @@ function App() {
               <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed mb-6">
                 {resumeData.about}
               </p>
+              <p className="text-fluid-base text-ink/80 dark:text-ivory/80 font-sans leading-relaxed mb-6">
+                I'm also a member of the Varsity Men's Rowing Team at the University of Toronto, competing at the top boat level in OUA Championships.
+              </p>
               <div className="space-y-4">
                 {resumeData.education.map((edu, idx) => (
                   <div key={idx} className="border-l-2 border-accent/30 pl-4">
@@ -180,7 +183,9 @@ function App() {
               aria-label="Open photo gallery in new tab"
             >
               View Photo Gallery
-              <span className="text-fluid-xs" aria-hidden="true">↗</span>
+              <span className="text-fluid-xs" aria-hidden="true">
+                ↗
+              </span>
             </a>
             <p className="text-fluid-sm text-ink/50 dark:text-ivory/50 font-sans mt-4">
               April 2025 — Rowing Practice Photo Gallery
