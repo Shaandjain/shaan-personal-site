@@ -105,7 +105,7 @@
   "projects": [
     {"title": "What's Poppin", "url": "https://www.whatspoppin.info/", "tags": ["Product", "Reco Systems", "Startups"]},
     {"title": "When One Company Owns Your Memory", "url": "https://thedrcenter.org/when-one-company-owns-your-memory/", "tags": ["Policy", "AI"]},
-    {"title": "MLB Money Printer", "url": "https://github.com/Shaandjain/mlb-money-printer", "tags": ["Data Engineering", "ML", "Sports Analytics", "Kelly Criterion"], "description": "Used algorithms and MLB statistics to find edges against sportsbooks. Turned $10 into $200 in one month during the 2025 season."},
+    {"title": "MLB Edge Engine", "url": "https://github.com/Shaandjain/mlb-money-printer", "tags": ["Data Engineering", "ML", "Sports Analytics", "Kelly Criterion"], "description": "Used algorithms and MLB statistics to find edges against sportsbooks. Turned $10 into $200 in one month during the 2025 season."},
     {"title": "Bias in AI Diffusion Models", "url": "https://shaanjain.substack.com/p/i-investigated-the-bias-in-ai-diffusion", "tags": ["Research", "AI Ethics"]},
     {"title": "I Built an AI of Myself", "url": "https://shaanjain.substack.com/p/i-built-an-ai-of-myself-in-20-minutesad", "tags": ["Voice", "LLMs"]}
   ]
