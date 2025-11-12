@@ -7,6 +7,7 @@ import { ProjectCard } from './components/ProjectCard'
 import { Pill } from './components/Pill'
 import { TOC } from './components/TOC'
 import { ThemeToggle } from './components/ThemeToggle'
+import { PhotoGallery } from './components/PhotoGallery'
 import { SvgDefs } from './lib/filters'
 import { generateJSONLD } from './lib/seo'
 import resumeData from './content/resume.json'
@@ -45,11 +46,15 @@ function App() {
     }
   }, [])
 
+  // Generate rowing images array
+  const rowingImages = Array.from({ length: 58 }, (_, i) => `/rowimg${i + 1}.png`)
+
   const tocItems = [
     { id: 'about', label: 'About' },
     { id: 'experience', label: 'Experience' },
     { id: 'projects', label: 'Projects' },
     { id: 'research', label: 'Research' },
+    { id: 'gallery', label: 'Gallery' },
     { id: 'awards', label: 'Awards' },
     { id: 'skills', label: 'Skills' },
     { id: 'contact', label: 'Contact' },
@@ -163,6 +168,11 @@ function App() {
               </p>
             </div>
           </div>
+        </Section>
+
+        {/* Photo Gallery Section */}
+        <Section id="gallery" title="April 2025 — Rowing Practice Photo Gallery" kicker="Photography">
+          <PhotoGallery images={rowingImages} title="April 2025 Rowing Practice" />
         </Section>
 
         {/* Awards Section */}
